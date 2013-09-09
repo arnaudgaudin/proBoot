@@ -17,8 +17,8 @@
 @import url("tweaks.css");
 @import url("colours.css");
 @import url("imageset.css");
-@import url("bootstrap.css");
-@import url("bootstrap-responsive.css");
+/*@import url("bootstrap.css");
+@import url("bootstrap-responsive.css");*/
 
 /* Récupération style du forum généré par le site du client */
 @import url("../../../../../theme/css/forum.css");
