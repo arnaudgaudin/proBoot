@@ -118,11 +118,9 @@
 
 						<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
 						<a id="adv-search" class="pull-left" href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}"><i class="icon-plus-sign"></i>&nbsp;</a>
-						<form action="{U_SEARCH}" method="get" id="search" class="navbar-search pull-left">
-							<fieldset>
-								<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search search-query" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
-								{S_SEARCH_HIDDEN_FIELDS}
-							</fieldset>
+						<form action="{U_SEARCH}" method="get" id="search" class="navbar-search">
+							<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search search-query" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
+							{S_SEARCH_HIDDEN_FIELDS}
 						</form>
 						<!-- ENDIF -->
 
@@ -142,7 +140,7 @@
 									<li class="divider-vertical"></li>
 									<a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a>
 									<!-- ENDIF -->
-									
+
 								<!-- ENDIF -->
 
 							<!-- ENDIF -->
