@@ -113,18 +113,20 @@
 				<div class="navbar-inner">
 					<div class="container-fluid">
 						<a class="brand" href="{U_INDEX}">{SITENAME}</a>
-						<ul class="linklist nav" style="width: 50%;">
 
-							<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-							<li class="divider-vertical"></li>
-							<a class="pull-left" id="adv-search" href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}"><i class="icon-plus-sign"></i>&nbsp;</a>
-							<form action="{U_SEARCH}" method="get" id="search" class="navbar-search ">
-								<fieldset>
-									<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search search-query" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
-									{S_SEARCH_HIDDEN_FIELDS}
-								</fieldset>
-							</form>
-							<!-- ENDIF -->
+						<div class="divider-vertical pull-left"></div>
+
+						<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
+						<a id="adv-search" class="pull-left" href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}"><i class="icon-plus-sign"></i>&nbsp;</a>
+						<form action="{U_SEARCH}" method="get" id="search" class="navbar-search pull-left">
+							<fieldset>
+								<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search search-query" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
+								{S_SEARCH_HIDDEN_FIELDS}
+							</fieldset>
+						</form>
+						<!-- ENDIF -->
+
+						<ul class="nav">
 
 							<!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
 							<li class="divider-vertical"></li>
@@ -140,9 +142,7 @@
 									<li class="divider-vertical"></li>
 									<a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a>
 									<!-- ENDIF -->
-								
-								<!-- Que fait cette fermetture de li ici ? -->
-								<!-- </li> -->
+									
 								<!-- ENDIF -->
 
 							<!-- ENDIF -->
@@ -154,7 +154,7 @@
 							<li class="bb-logout"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x"><i class="icon-minus-sign "></i> {L_LOGIN_LOGOUT}</a></li>
 							<!-- ENDIF -->
 
-						</ul><!-- ul -->
+						</ul>
 
 						<div class="btn-group pull-right">
 							<a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">{S_USERNAME} <span class="caret"></span></a>
@@ -192,9 +192,7 @@
 
 		<div id="page-body">
 			<ul class="breadcrumb">
-				<li>
-					<a href="{U_INDEX}">{L_INDEX}</a><!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks -->
-				</li>
+				<li><a href="{U_INDEX}">{L_INDEX}</a><!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks --></li>
 			</ul>
 
 			<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
