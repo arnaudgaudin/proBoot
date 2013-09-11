@@ -186,18 +186,19 @@
 				</div><!--navbar inner-->
 			</div><!--navbar-->
 		</div><!--headerbar-->
+	</div><!--page-header-->
 
-		<a id="start_here"></a>
+	<a id="start_here"></a>
 
-		<div id="page-body">
-			<ul class="breadcrumb">
-				<li><a href="{U_INDEX}">{L_INDEX}</a><!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks --></li>
-			</ul>
+	<div id="page-body">
+		<ul class="breadcrumb">
+			<li><a href="{U_INDEX}">{L_INDEX}</a><!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks --></li>
+		</ul>
 
-			<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
-			<div id="information" class=" row-fluid rules">
-				<div class="well">
-					<strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED}
-				</div>
+		<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
+		<div id="information" class=" row-fluid rules">
+			<div class="well">
+				<strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED}
 			</div>
-			<!-- ENDIF -->
+		</div>
+		<!-- ENDIF -->
