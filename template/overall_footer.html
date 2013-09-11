@@ -46,18 +46,18 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<ul class="nav">
-				<li><a href="{U_INDEX}" accesskey="h"><i class="icon-home"></i></a></li>
+				<li><a href="{U_INDEX}" accesskey="h"><i class="icon-custom-internet-home"></i></a></li>
 				<li class="divider-vertical"></li>
 				
 				<!-- IF not S_IS_BOT -->
 
 					<!-- IF S_WATCH_FORUM_LINK -->
-					<li><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}"><i <!-- IF S_WATCHING_FORUM -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->></i> {S_WATCH_FORUM_TITLE}</a></li>
+					<li><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}"><i <!-- IF S_WATCHING_FORUM -->class="icon-signout"<!-- ELSE -->class="icon-signin"<!-- ENDIF -->></i> {S_WATCH_FORUM_TITLE}</a></li>
 					<li class="divider-vertical"></li>
 					<!-- ENDIF -->
 					
 					<!-- IF U_WATCH_TOPIC -->
-					<li><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}"><i <!-- IF S_WATCHING_TOPIC -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->></i> {L_WATCH_TOPIC}</a></li>
+					<li><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}"><i <!-- IF S_WATCHING_TOPIC -->class="icon-signout"<!-- ELSE -->class="icon-signin"<!-- ENDIF -->></i> {L_WATCH_TOPIC}</a></li>
 					<li class="divider-vertical"></li>
 					<!-- ENDIF -->
 					
