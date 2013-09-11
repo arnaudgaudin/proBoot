@@ -158,53 +158,49 @@
 
 						<div class="btn-group pull-right">
 							<a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#">{S_USERNAME} <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
-    
-    	<!-- IF S_DISPLAY_PM --> 
-				
-				<li>		
-						<a href="{U_PRIVATEMSGS}"><i class="icon-envelope "></i> <span class="label label-important">{PRIVATE_MESSAGE_INFO}</span><!-- IF PRIVATE_MESSAGE_INFO_UNREAD -->, {PRIVATE_MESSAGE_INFO_UNREAD}<!-- ENDIF --></a></li><!-- ENDIF -->
+							<ul class="dropdown-menu">
+								<!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
 
-    <!-- IF S_DISPLAY_SEARCH --> 
-					
-					<li>
-					<a href="{U_SEARCH_SELF}"><i class="icon-file "></i> {L_SEARCH_SELF}</a>
-					</li>
-					<!-- ENDIF -->
-    <li class="bb-ucp">
-					<a href="{U_PROFILE}" title="{L_PROFILE}" accesskey="e"><i class="icon-wrench "></i> {L_PROFILE}</a>
-					</li>
-	<li class="divider"></li>
-	<!-- ENDIF -->				
-	<li class="bb-logout"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x"><i class="icon-minus-sign "></i> {L_LOGIN_LOGOUT}</a></li>
-	<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) -->
-					
-					<li class="bb-register"><a href="{U_REGISTER}"><i class="icon-user "></i> {L_REGISTER}</a></li>
-					
-					<!-- ENDIF -->
-  </ul>
-</div><!--btn group-->
+									<!-- IF S_DISPLAY_PM -->
+									<li><a href="{U_PRIVATEMSGS}"><i class="icon-envelope "></i> <span class="label label-important">{PRIVATE_MESSAGE_INFO}</span><!-- IF PRIVATE_MESSAGE_INFO_UNREAD -->, {PRIVATE_MESSAGE_INFO_UNREAD}<!-- ENDIF --></a></li>
+									<!-- ENDIF -->
 
+									<!-- IF S_DISPLAY_SEARCH -->
+									<li><a href="{U_SEARCH_SELF}"><i class="icon-file "></i> {L_SEARCH_SELF}</a></li>
+									<!-- ENDIF -->
+
+									<li class="bb-ucp">
+										<a href="{U_PROFILE}" title="{L_PROFILE}" accesskey="e"><i class="icon-wrench "></i> {L_PROFILE}</a>
+									</li>
+									<li class="divider"></li>
+
+								<!-- ENDIF -->				
+
+								<li class="bb-logout"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x"><i class="icon-minus-sign "></i> {L_LOGIN_LOGOUT}</a></li>
+
+								<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) -->
+								<li class="bb-register"><a href="{U_REGISTER}"><i class="icon-user "></i> {L_REGISTER}</a></li>
+								<!-- ENDIF -->
+							</ul>
+						</div><!--btn group-->
+					</div><!--container fluid-->
+				</div><!--navbar inner-->
+			</div><!--navbar-->
+		</div><!--headerbar-->
+
+		<a id="start_here"></a>
+
+		<div id="page-body">
+			<ul class="breadcrumb">
+				<li>
+					<a href="{U_INDEX}">{L_INDEX}</a><!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks -->
+				</li>
+			</ul>
+
+			<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
+			<div id="information" class=" row-fluid rules">
+				<div class="well">
+					<strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED}
 				</div>
-
 			</div>
-		</div>
-
-	</div>
-
-	<a id="start_here"></a>
-	<div id="page-body">
-	
-	<ul class="breadcrumb">
-		<li>
-	<a href="{U_INDEX}">{L_INDEX}</a><!-- BEGIN navlinks --> <strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a><!-- END navlinks -->
-		</li>
-	</ul>
-		<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
-		<div id="information" class=" row-fluid rules">
-			<div class="well">
-				<strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED}
-			</div>
-		</div>
-		<!-- ENDIF -->
+			<!-- ENDIF -->
