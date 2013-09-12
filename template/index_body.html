@@ -12,7 +12,7 @@
 <!-- INCLUDE forumlist_body.html -->
 
 <!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
-<div class="row-fluid box">
+<div class="row box">
 	<form method="post" action="{S_LOGIN_ACTION}" class="form-horizontal no-margin">
 	<h3 class="heading"><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF S_REGISTER_ENABLED -->&nbsp; &bull; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h3>
 	<p>
@@ -31,7 +31,7 @@
 <!-- ENDIF -->
 
 <!-- IF S_DISPLAY_ONLINE_LIST -->
-<div class="row-fluid box">
+<div class="row box">
 	<!-- IF U_VIEWONLINE -->
 	<h3 class="heading"><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h3><!-- ELSE --><h3 class="heading">{L_WHO_IS_ONLINE}</h3>
 	<!-- ENDIF -->
@@ -41,14 +41,14 @@
 <!-- ENDIF -->
 
 <!-- IF S_DISPLAY_BIRTHDAY_LIST and BIRTHDAY_LIST -->
-<div class="row-fluid box">
+<div class="row box">
 	<h3 class="heading">{L_BIRTHDAYS}</h3>
 	<p><!-- IF BIRTHDAY_LIST -->{L_CONGRATULATIONS}: <strong>{BIRTHDAY_LIST}</strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF --></p>
 </div>
 <!-- ENDIF -->
 
 <!-- IF NEWEST_USER -->
-<div class="row-fluid box">
+<div class="row box">
 	<h3 class="heading">{L_STATISTICS}</h3>
 	<p>{TOTAL_POSTS} &bull; {TOTAL_TOPICS} &bull; {TOTAL_USERS} &bull; {NEWEST_USER}</p>
 	<p class="{S_CONTENT_FLOW_END}<!-- IF S_USER_LOGGED_IN --> rightside<!-- ENDIF -->"><!-- IF S_USER_LOGGED_IN -->{LAST_VISIT_DATE}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --></p>

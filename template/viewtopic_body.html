@@ -5,7 +5,7 @@
 <!-- IF FORUM_DESC --><div style="display: none !important;">{FORUM_DESC}<br /></div><!-- ENDIF -->
 
 <!-- IF S_FORUM_RULES -->
-	<div class="rules row-fluid">
+	<div class="rules row">
 		<div class="well">
 
 		<!-- IF U_FORUM_RULES -->
@@ -19,7 +19,7 @@
 	</div>
 <!-- ENDIF -->
 
-<div class="row-fluid topic-actions">
+<div class="row topic-actions">
 
 	<div class="span4">
 	<!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
@@ -53,7 +53,7 @@
 <!-- IF S_HAS_POLL -->
 	<form method="post" action="{S_POLL_ACTION}">
 
-	<div class="row-fluid panel">
+	<div class="row panel">
 		<div class="well">
 
 		<div class="content">
@@ -105,7 +105,7 @@
 
 <!-- BEGIN postrow -->
 	<!-- IF postrow.S_FIRST_UNREAD --><a id="unread"></a><!-- ENDIF -->
-	<div id="p{postrow.POST_ID}" class="row-fluid">
+	<div id="p{postrow.POST_ID}" class="row">
 		<div class="well <!-- IF postrow.S_UNREAD_POST --> alert-info<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> alert-danger<!-- ENDIF -->">
 
 		<div class="postbody span9">
@@ -234,7 +234,7 @@
 <!-- ENDIF -->
 
 <!-- IF S_TOPIC_MOD -->
-<div class="row-fluid">
+<div class="row">
 	<div class="span12 well">
 	<h3 class="box-heading">{L_QUICK_MOD}</h3>
 	<form method="post" action="{S_MOD_ACTION}" class="form-inline alert-danger">
@@ -265,7 +265,7 @@
 
 
 
-<div class="row-fluid topic-actions">
+<div class="row topic-actions">
 
 	
 	<!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
@@ -300,7 +300,7 @@
 
 
 <!-- IF S_DISPLAY_ONLINE_LIST -->
-<div class="row-fluid box">
+<div class="row box">
 	<h3 class="heading"><!-- IF U_VIEWONLINE --><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a><!-- ELSE -->{L_WHO_IS_ONLINE}<!-- ENDIF --></h3>
 	<p>{LOGGED_IN_USER_LIST}</p>
 </div>

@@ -37,7 +37,7 @@
 <!-- IF S_DISPLAY_POST_INFO or PAGINATION or TOTAL_POSTS or TOTAL_TOPICS -->
 	<div class="topic-actions" <!-- IF S_HAS_SUBFORUM -->style="margin-top: 2em;"<!-- ENDIF -->>
 
-	<div class="row-fluid">
+	<div class="row">
 	
 	<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
 	<div class="span4">
@@ -83,7 +83,7 @@
 
 <!-- IF S_NO_READ_ACCESS -->
 
-	<div class="row-fluid">
+	<div class="row">
 		<div class="well">
 		<strong>{L_NO_READ_ACCESS}</strong>
 		</div>
@@ -93,7 +93,7 @@
 
 		<form action="{S_LOGIN_ACTION}" method="post">
 
-		<div class="row-fluid">
+		<div class="row">
 			<div class="well">
 					<h3 class="box-heading"><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF S_REGISTER_ENABLED -->&nbsp; &bull; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h3>
 			<div class="content">
@@ -211,7 +211,7 @@
 <!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
 
 	
-	<div class="row-fluid">
+	<div class="row">
 	
 	<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
 	<div class="span4">
@@ -257,7 +257,7 @@
 <!-- INCLUDE jumpbox.html -->
 
 <!-- IF S_DISPLAY_ONLINE_LIST -->
-<div class="row-fluid box">
+<div class="row box">
 	<h3 class="heading"><!-- IF U_VIEWONLINE --><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a><!-- ELSE -->{L_WHO_IS_ONLINE}<!-- ENDIF --></h3>
 	<p>{LOGGED_IN_USER_LIST}</p>
 </div>
@@ -265,7 +265,7 @@
 <!-- ENDIF -->
 
 <!-- IF S_DISPLAY_POST_INFO -->
-<div class="row-fluid box">
+<div class="row box">
 	<h3 class="heading">{L_FORUM_PERMISSIONS}</h3>
 	<p><!-- BEGIN rules -->{rules.RULE}<br /><!-- END rules --></p>
 </div>
